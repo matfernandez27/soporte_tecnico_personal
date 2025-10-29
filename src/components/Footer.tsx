@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Columna 1: Marca */}
           <div>
             <h3 className="text-xl font-bold text-white mb-4">
-              Matías Fernández
+              Soporte Técnico en Computación
             </h3>
             <p className="text-white/80 leading-relaxed">
               Técnico en Computación especializado en soporte y reparación de equipos. 
@@ -47,11 +47,11 @@ export default function Footer() {
                 className="flex items-center gap-3 text-white/80 hover:text-verde-menta transition-colors"
               >
                 <FaEnvelope size={20} />
-                <span>tu-email@ejemplo.com</span>
+                <span>soporte.tecnico@ejemplo.com</span>
               </a>
               <div className="flex items-start gap-3 text-white/80">
                 <FaMapMarkerAlt size={20} className="mt-1 flex-shrink-0" />
-                <span>Av. Ejemplo 1234, CABA</span>
+                <span>Facultad de Medicina, CABA</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function Footer() {
         {/* Barra de Copyright */}
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-white/70">
-            © {new Date().getFullYear()} Matías Fernández - Soporte Técnico. Todos los derechos reservados.
+            © {new Date().getFullYear()} Soporte Técnico en Computación. Todos los derechos reservados.
           </p>
         </div>
       </div>
