@@ -16,12 +16,16 @@ export default function Hero() {
     <section className="w-full bg-base-claro py-24">
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        {/* En móvil, las columnas se apilan (grid-cols-1). En pantallas medianas y grandes, son 2 columnas (md:grid-cols-2). */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
           {/* --- Columna Izquierda: Título y Beneficios --- */}
+          {/* En móvil, esta columna aparece primero */}
           <div className="flex flex-col gap-8">
             
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-texto-principal">
+            {/* ----- TAMAÑO DE FUENTE AJUSTADO PARA MÓVIL ----- */}
+            <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-texto-principal">
+            {/* ----------------------------------------------- */}
               TÉCNICO EN 
               <span className="
                 bg-gradient-to-r from-celeste to-verde-menta 
@@ -53,7 +57,7 @@ export default function Hero() {
             </ul>
             
             <a 
-              href="https://wa.me/5491162101770"
+              href="https://wa.me/5491162101770" // Tu número
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 
@@ -71,6 +75,7 @@ export default function Hero() {
           </div>
 
           {/* --- Columna Derecha: Ilustración y Distintivo --- */}
+          {/* En móvil, esta columna aparece debajo de la anterior */}
           <div className="relative flex flex-col items-center">
             
             <div className="w-full h-96 relative rounded-lg overflow-hidden">
@@ -82,6 +87,7 @@ export default function Hero() {
               />
             </div>
             
+            {/* El distintivo +5 se posiciona absolutamente */}
             <div className="
               absolute -bottom-6 -left-6 
               bg-amarillo-suave 
