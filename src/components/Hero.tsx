@@ -85,7 +85,7 @@ export default function Hero() {
             {/* ----- DIV ACTUALIZADO CON POSICIÓN RESPONSIVA ----- */}
             <div className="
               absolute
-              bottom-4 left-4 md:-bottom-6 md:-left-6 {/* <-- AQUÍ EL CAMBIO */}
+              bottom-2 left-2 md:-bottom-4 md:-left-4 {/* <-- AQUÍ EL CAMBIO */}
               bg-amarillo-suave
               py-6 px-5 rounded-2xl
               shadow-lg
