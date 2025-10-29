@@ -7,10 +7,9 @@ import { FaMapMarkerAlt, FaClock, FaExclamationCircle } from "react-icons/fa";
 
 export default function Location() {
   return (
-    // 1. Fondo de sección cambiado a 'bg-white'
     <section id="ubicacion" className="py-24 bg-white">
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +26,8 @@ export default function Location() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          
+
+          {/* Mapa Animado */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -35,18 +35,18 @@ export default function Location() {
             transition={{ duration: 0.6 }}
             className="rounded-2xl overflow-hidden shadow-lg h-[450px] border-4 border-white"
           >
-            {/* 2. Placeholder cambiado a 'bg-base-claro' (gris pálido) */}
-            <div className="w-full h-full bg-base-claro flex items-center justify-center">
-              <span className="text-texto-principal/50">
-                [Aquí va el mapa de Google Maps]
-              </span>
-            </div>
-            {/* Espacio para el <iframe>, este div de placeholder 
-              se irá y el mapa real ocupará el espacio. 
-            */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1273.9840732608386!2d-58.39793782088257!3d-34.59898282342412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca944582dea1%3A0x1187bb1c0c4c27b0!2sPlaza%20Dr.%20Bernardo%20Houssay!5e0!3m2!1ses!2sar!4v1761770408887!5m2!1ses!2sar" // Tu src de iframe
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
           </motion.div>
 
-          {/* Columna de información */}
+          {/* Columna de Información Animada */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -101,7 +101,7 @@ export default function Location() {
                 </p>
               </div>
             </div>
-            
+
           </motion.div>
         </div>
       </div>
