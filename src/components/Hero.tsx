@@ -82,19 +82,21 @@ export default function Hero() {
               />
             </div>
 
-            {/* ----- DIV ACTUALIZADO CON POSICIÓN RESPONSIVA 2 ----- */}
+            {/* ----- DIV ACTUALIZADO CON TAMAÑO RESPONSIVO ----- */}
             <div className="
               absolute
-              bottom-4 left-4 md:-bottom-6 md:-left-6 {/* <-- reparado */}
+              bottom-4 left-4 md:-bottom-6 md:-left-6 {/* Posición */}
               bg-amarillo-suave
-              py-6 px-5 rounded-2xl
+              p-3 md:py-6 md:px-5 rounded-2xl {/* Padding responsivo */}
               shadow-lg
               text-center
               border-4 border-white
             ">
-              <span className="text-4xl font-bold text-texto-principal">+5</span>
+              {/* Fuente responsiva para "+5" */}
+              <span className="text-3xl md:text-4xl font-bold text-texto-principal">+5</span>
+              {/* Fuente responsiva para "Años..." */}
               <span
-                className="block text-texto-principal/80 -mt-1 text-lg leading-tight"
+                className="block text-texto-principal/80 -mt-1 text-base md:text-lg leading-tight"
                 dangerouslySetInnerHTML={{ __html: 'Años de<br />experiencia' }}
               />
             </div>
