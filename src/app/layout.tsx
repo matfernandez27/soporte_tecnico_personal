@@ -6,8 +6,8 @@ import './globals.css'; // Esto importa Tailwind
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Matías Fernández - Soporte Técnico', // Actualizado
-  description: 'Soluciones amigables para tus problemas tecnológicos', // Actualizado
+  title: 'Soporte Técnico en Computación', // Actualizado
+  description: 'Soluciones reales para tus proyectos digitales', // Actualizado
 };
 
 export default function RootLayout({
