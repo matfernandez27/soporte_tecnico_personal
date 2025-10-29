@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Navbar() {
-  const whatsappNumber = "5491162101770"; // Tu número
-  const whatsappMessage = encodeURIComponent("Hola, necesito ayuda con un problema técnico.");
+  const whatsappNumber = "5491162101770"; 
+  const whatsappMessage = encodeURIComponent("Hola, ¿qué tal? Tengo un problema técnico. ¿Tienes un momento para una consulta?");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -16,15 +16,14 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      // Usamos bg-white/95 (traducido de bg-background/95) y la nueva shadow-soft
       className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft"
     >
       {/* 2. Usamos max-w-6xl para consistencia */}
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         
-        {/* 3. Logo de una sola línea (del código que pasaste) */}
+        {/* 3. Logo de una sola línea */}
         <h2 className="text-xl font-bold text-texto-principal">
-          Matías Fernández - Soporte Técnico
+          Soporte Técnico en Computación
         </h2>
         
         {/* 4. Botón de Escritorio (Oculto en móvil) */}

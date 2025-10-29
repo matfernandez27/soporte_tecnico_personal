@@ -5,17 +5,17 @@ import React from 'react';
 import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
-  const whatsappNumber = "5491162101770"; // Tu número
+  const whatsappNumber = "5491162101770"; 
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
-  const mailTo = "mailto:tu-email@ejemplo.com"; // <-- CAMBIA ESTE EMAIL
+  const mailTo = "mailto:fernandez.mat.g@gmail.com";
 
   return (
-    // 1. Fondo oscuro (traducido de 'bg-primary')
+    // 1. Fondo oscuro 
     <footer className="w-full bg-texto-principal text-white py-12">
       {/* 2. Contenedor de nuestro proyecto */}
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* 3. Grid de 3 columnas (del código que pasaste) */}
+        {/* 3. Grid de 3 columnas */}
         <div className="grid md:grid-cols-3 gap-10 mb-8">
           
           {/* Columna 1: Marca */}

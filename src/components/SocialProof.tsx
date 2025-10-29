@@ -2,7 +2,6 @@
 "use client";
 
 import React from 'react';
-// 1. Importamos el nuevo ícono (FaHandshake) y quitamos FaStore
 import { FaWhatsapp, FaDollarSign, FaHandshake, FaChevronRight } from 'react-icons/fa';
 
 const steps = [
@@ -19,7 +18,6 @@ const steps = [
     color: "bg-verde-menta",
   },
   {
-    // 2. ÍCONO ACTUALIZADO
     icon: FaHandshake, 
     title: "3. Coordinación de Recepción",
     description: "Acordamos día y hora para que traigas tu equipo al taller. Servicio profesional en nuestras instalaciones.",

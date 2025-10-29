@@ -8,13 +8,13 @@ import { motion } from "framer-motion";
 import {
   FaDesktop,
   FaBroom,
-  FaHdd, // <-- Nuevo
+  FaHdd, 
   FaTools,
   FaTachometerAlt,
-  FaDatabase, // <-- Nuevo
+  FaDatabase, 
 } from "react-icons/fa";
 
-// 2. Nueva lista de servicios con colores individuales
+// 2. Lista de servicios con colores individuales
 const services = [
   {
     icon: FaDesktop,
@@ -54,7 +54,7 @@ const services = [
   },
 ];
 
-// 3. Variantes de animación del contenedor (del código que diste)
+// 3. Variantes de animación del contenedor
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {

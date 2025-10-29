@@ -22,7 +22,7 @@ export default function Location() {
             Dónde Encontrarnos
           </h2>
           <p className="text-lg text-texto-principal/70 mt-2 max-w-2xl mx-auto">
-            Visitanos en nuestro taller o coordiná la recepción de tu equipo
+            Coordiná la recepción de tu equipo
           </p>
         </motion.div>
 
@@ -41,12 +41,12 @@ export default function Location() {
                 [Aquí va el mapa de Google Maps]
               </span>
             </div>
-            {/* Cuando pegues tu <iframe>, este div de placeholder 
+            {/* Espacio para el <iframe>, este div de placeholder 
               se irá y el mapa real ocupará el espacio. 
             */}
           </motion.div>
 
-          {/* Columna de información (sin cambios) */}
+          {/* Columna de información */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -65,7 +65,7 @@ export default function Location() {
                     Dirección del Taller
                   </h3>
                   <p className="text-lg text-texto-principal/80">
-                    Av. Ejemplo 1234<br />
+                    Zona Facultad de Medicina<br />
                     Ciudad Autónoma de Buenos Aires, Argentina
                   </p>
                 </div>

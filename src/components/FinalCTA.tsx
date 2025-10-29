@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function FinalCTA() {
-  const whatsappNumber = "5491162101770"; // TU NÚMERO
+  const whatsappNumber = "5491162101770"; 
   const whatsappMessage = encodeURIComponent("Hola, necesito ayuda con un problema técnico.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -45,7 +45,6 @@ export default function FinalCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            {/* ----- BOTÓN ACTUALIZADO CON DEGRADADO ----- */}
             <a
               href={whatsappUrl}
               target="_blank"

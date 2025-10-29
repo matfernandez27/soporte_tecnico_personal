@@ -53,7 +53,7 @@ export default function Hero() {
             </ul>
             
             <a 
-              href="https://wa.me/5491162101770" // Tu número
+              href="https://wa.me/5491162101770"
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 
@@ -75,9 +75,7 @@ export default function Hero() {
             
             <div className="w-full h-96 relative rounded-lg overflow-hidden">
               <Image
-                // ----- AQUÍ ESTÁ EL CAMBIO -----
                 src="/img/computer-background.jpg" 
-                // -------------------------------
                 alt="Ilustración de soporte técnico amigable"
                 fill
                 className="object-cover"
